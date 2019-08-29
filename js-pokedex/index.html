@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Pokedex</title>
+</head>
+<body>
+    <div class="pokedex">
+        <div class="poke-left">
+            <div class="left-head">
+                <div class="left-head-corner">
+                    <div class="lens">
+                        <div class="reflect"> </div>
+                    </div>
+                    <div class="dot red"></div>
+                    <div class="dot yellow"></div>
+                    <div class="dot green"></div>
+                </div> 
+                <div class="curves">
+                    <div class="curveL-1"><div class="curveL-2"></div></div>  
+                    
+                </div>  
+            </div>
+            
+            <div class="left-main">
+                <div class="display">
+                    <div class="display-top">
+                        <div class="minired"></div>
+                        <div class="minired"></div>
+                    </div>
+                    <div class="display-middle">
+                        <div class="jiggly">
+                            <img id="pokemon_image">
+                            <div id="pokemon_name"></div>
+                        </div>
+                    </div>
+                    <div class="display-bottom">
+                        <div class="triangle"></div>
+                        <div class="naast-triangle">
+                            <div class="bigred"></div>
+                            <div class="menu">
+                                <i class="fas fa-bars"></i>
+                                <i class="fas fa-bars"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="left-footer">
+                <div class="foot-left"><div class="bigblue"></div></div>
+                <div class="foot-middle">
+                    <div class="buttons">
+                        <div class="knop gardengreen"></div>
+                        <div class="knop orange"></div>
+                    </div>
+                    <div class="numberbox">
+                        <div class="number" id="pokemon_id"></div>
+                    </div>
+                </div>
+                <div class="foot-right">
+                    <div class="d-pad">
+                        <div class="button d up"><i class="fas fa-caret-up"></i></div>
+                        <div class="button d right"><i class="fas fa-caret-right"></i></div>
+                        <div class="d middle"></div>
+                        <div class="button d down"><i class="fas fa-caret-down"></i></div>
+                        <div class="button d left"><i class="fas fa-caret-left"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="poke-middle">
+            <div class="bol"></div>
+            <div class="hol"></div>
+            <div class="bol"></div>
+            <div class="hol"></div>
+            <div class="bol"></div>
+            <div class="hol"></div>
+        </div>
+        <div class="poke-right">
+            <div class="right-head">
+                <div class="curvesR">
+                    <div class="curveR-1">
+                        <div class="curveR-2"></div>
+                    </div>
+                </div>
+                <div class="right-head-corner"></div>
+            </div>
+            <div class="right-main">
+                <div class="greenbox" id="infobox"></div>
+                <!--<div class="greenbox" id="infobox" onclick="addInfo()"></div>-->
+                <div class="blueboxes">
+                    <div class="row">
+                        <div class="bluebox"></div>
+                        <div class="bluebox"></div>
+                        <div class="bluebox"></div>
+                        <div class="bluebox"></div>
+                        <div class="bluebox"></div>
+                    </div>
+                        <div class="row">
+                        <div class="bluebox"></div>
+                        <div class="bluebox"></div>
+                        <div class="bluebox"></div>
+                        <div class="bluebox"></div>
+                        <div class="bluebox"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-footer">
+                <div class="foot-r-top">
+                    <div>
+                        <div class="dot darkblue "></div>
+                        <div class="dot darkyellow"></div>
+                    </div>
+                    <div class="buttons">
+                        <div class="knop gardengreen"></div>
+                        <div class="knop orange"></div>
+                    </div>
+                </div>
+                <div class="foot-r-middle">
+                    <div class="buttons">
+                        <button id="previous" class="but-gray l"><i class="fas fa-caret-left"></i></button>
+                        <button id="next" class="but-gray r"><i class="fas fa-caret-right"></i></button>
+                    </div>
+                    <div class="but-yellow"><i class="fas fa-caret-left"></i></div>
+                </div>
+                <div class="foot-r-bottom">
+                    <input type="text" id="pokesearch" name="pokesearch" placeholder="Pikachu" class= "rect-yellow-l">
+                    <label class="rect-yellow-r" for="pokesearch"><button id="search" class="but-rect-yellow-r">Search!</button></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="listOfPokemons">
+        <ul id="list"></ul>
+    </div>
+
+    <script src="https://kit.fontawesome.com/24d7844539.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
