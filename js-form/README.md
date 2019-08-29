@@ -1,4 +1,4 @@
-Result: [Form](https://carolineschevers.github.io/js-form/)
+Result: [Form](https://carolineschevers.github.io/JAVASCRIPT/js-form/)
 
 # Challenge: Javascript to the challenge
 |Challenge Parameters  |Challenge Details              |
