@@ -1,4 +1,4 @@
-Result: [Paper-Rock-Scissors-Lizard-Spock](https://carolineschevers.github.io/paper-rock-scissors/)
+Result: [Paper-Rock-Scissors-Lizard-Spock](https://carolineschevers.github.io/JAVASCRIPT/js-conditions/)
 
 # Challenge: Conditional statements
 
