@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        table {text-align: left}
+
+        td, th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        div {border: 1px solid #ddd;
+        height: 50%;}
+
+        tr:nth-child(even){background-color: #f2f2f2;}
+        
+        th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: rosybrown;
+        color: white;
+        }
+
+        table td {min-width: 100px;}
+    </style>
+</head>
+<body>
+    <h1>List of all of the different results</h1>
+
+    <table>
+        <tr><h2>Arithmetic operators</h2></tr>
+        <tr>x = 26, y = 4</tr>
+        <tr>
+            <h3>
+                <th>Operator</th>
+                <th>Sign</th>
+                <th>Notation</th>
+                <th>Example</th>
+                <th>Result A</th>
+                <th>string + string</th>
+                <th>Result B</th>
+                <th>string + number </th>
+                <th>Result C</th>
+                <th>string + array </th>
+                <th>Result D</th>
+            </h3>
+        </tr>
+        <tr>
+            <td>Addition</td>
+            <td>+</td>
+            <td>x + y</td>
+            <td>26 + 4</td>
+            <td><button onclick="addition()">Show result</button><p id="add"></p></td>
+            <td>"Hello " + "World"</td>
+            <td><button onclick="additionS()">Show result</button><p id="addS"></p></td>
+            <td>
+                <div>"Hello " + 26 </div>
+                <div>"5" + 26 </div>
+            </td>
+            <td>
+                <button onclick="additionSN()">Show result</button><p id="addSN"></p>
+                <button onclick="additionSnN()">Show result</button><p id="addSnN"></p>
+            </td>
+            <td>"Hello " + ["dog", "cat", "pigeon"] </td>
+            <td><button onclick="additionSA()">Show result</button><p id="addSA"></p></td>
+        </tr>
+        <tr>
+            <td>Substraction</td>
+            <td>-</td>
+            <td>x - y</td>
+            <td>26 - 4</td>
+            <td><button onclick="substraction()">Show result</button><p id="sub"></p></td>
+            <td>"Hello " - "World"</td>
+            <td><button onclick="substractionS()">Show result</button><p id="subS"></p></td>
+            <td>
+                <div>"Hello " - 26 </div>
+                <div>"5" - 26 </div>
+            </td>
+            <td>
+                <button onclick="substractionSN()">Show result</button><p id="subSN"></p>
+                <button onclick="substractionSnN()">Show result</button><p id="subSnN"></p>
+            </td>
+            <td>"Hello " - ["dog", "cat", "pigeon"] </td>
+            <td><button onclick="substractionSA()">Show result</button><p id="subSA"></p></td>
+        </tr>
+        <tr>
+            <td>Division</td>
+            <td>/</td>
+            <td>x / y</td>
+            <td>26 / 4</td>
+            <td><button onclick="division()">Show result</button><p id="div"></p></td>
+            <td>"Hello " / "World"</td>
+            <td><button onclick="divisionS()">Show result</button><p id="divS"></p></td>
+            <td>
+                <div>"Hello " / 26 </div>
+                <div>"5" / 26 </div>
+            </td>
+            <td>
+                <div><button onclick="divisionSN()">Show result</button><p id="divSN"></p></div>
+                <div><button onclick="divisionSnN()">Show result</button><p id="divSnN"></p></div>
+            </td>
+            <td>"Hello " / ["dog", "cat", "pigeon"] </td>
+            <td><button onclick="divisionSA()">Show result</button><p id="divSA"></p></td>
+        </tr>
+        <tr>
+            <td>Multiplication</td>
+            <td>*</td>
+            <td>x * y</td>
+            <td>26 * 4</td>
+            <td><button onclick="multiplication()">Show result</button><p id="mul"></p></td>
+            <td>"Hello " * "World"</td>
+            <td><button onclick="multiplicationS()">Show result</button><p id="mulS"></p></td>
+            <td>
+                <div>"Hello " * 26</div>
+                <div>"5" * 26</div>
+            </td>
+            <td>
+                <div><button onclick="multiplicationSN()">Show result</button><p id="mulSN"></p></div>
+                <div><button onclick="multiplicationSnN()">Show result</button><p id="mulSnN"></p></div>
+            </td>
+            <td>"Hello " * ["dog", "cat", "pigeon"] </td>
+            <td><button onclick="multiplicationSA()">Show result</button><p id="mulSA"></p></td>
+        </tr>
+        <tr>
+            <td>Remainder</td>
+            <td>%</td>
+            <td>x % y</td>
+            <td>26 % 4</td>
+            <td><button onclick="remainder()">Show result</button><p id="re"></p></td>
+            <td>"Hello " % "World"</td>
+            <td><button onclick="remainderS()">Show result</button><p id="reS"></p></td>
+            <td>
+                <div>"Hello " % 26</div>
+                <div>"5" % 26</div>
+            </td>
+            <td>
+                <div><button onclick="remainderSN()">Show result</button><p id="reSN"></p></div>
+                <div><button onclick="remainderSnN()">Show result</button><p id="reSnN"></p></div>
+            </td>
+            <td>"Hello " % ["dog", "cat", "pigeon"] </td>
+            <td><button onclick="remainderSA()">Show result</button><p id="reSA"></p></td>
+        </tr>
+        <tr>
+            <td>Exponentiation</td>
+            <td>**</td>
+            <td>x ** y</td>
+            <td>26 ** 4</td>
+            <td><button onclick="exponentiation()">Show result</button><p id="ex"></p></td>
+            <td>"Hello " % "World"</td>
+            <td><button onclick="exponentiationS()">Show result</button><p id="exS"></p></td>
+            <td>
+                <div>"Hello " ** 26</div>
+                <div>"5" ** 26</div>
+            </td>
+            <td>
+                <div><button onclick="exponentiationSN()">Show result</button><p id="exSN"></p></div>
+                <div><button onclick="exponentiationSnN()">Show result</button><p id="exSnN"></p></div>
+            </td>
+            <td>"Hello " ** ["dog", "cat", "pigeon"] </td>
+            <td><button onclick="exponentiationSA()">Show result</button><p id="exSA"></p></td>
+        </tr>
+        <tr>
+            <td>Increment</td>
+            <td>++</td>
+            <td>x++</td>
+            <td>26++</td>
+            <td><button onclick="increment()">Show result</button><p id="inc"></p></td>
+            <td>"Hello "++</td>
+            <td><button onclick="incrementS()">Show result</button><p id="incS"></p></td>
+            <td>
+                <div>"5"++</div>
+            </td>
+            <td>
+                <div><button onclick="incrementSnN()">Show result</button><p id="incSnN"></p></div>
+            </td>
+            <td>["dog", "cat", "pigeon"]++ </td>
+            <td><button onclick="incrementSA()">Show result</button><p id="incSA"></p></td>
+        </tr>
+        <tr>
+            <td>Decrement</td>
+            <td>--</td>
+            <td>x --</td>
+            <td>26 --</td>
+            <td><button onclick="decrement()">Show result</button><p id="dec"></p></td>
+            <td>"Hello "--</td>
+            <td><button onclick="decrementS()">Show result</button><p id="decS"></p></td>
+            <td>
+                <div>"5"--</div>
+            </td>
+            <td>
+                <div><button onclick="decrementSnN()">Show result</button><p id="decSnN"></p></div>
+            </td>
+            <td>["dog", "cat", "pigeon"]-- </td>
+            <td><button onclick="decrementSA()">Show result</button><p id="decSA"></p></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr><h2>Assignment operators</h2></tr>
+        <tr>
+            <h3>
+                <th>Operator</th>
+                <th>Sign</th>
+                <th>Shorthand notation</th>
+                <th>Notation</th>
+                <th>Result</th>
+            </h3>
+        </tr>
+        <tr>x = 13, y = 7</tr>
+        <tr>
+            <td>Addition assignment</td>
+            <td>+</td>
+            <td>x += y</td>
+            <td>x = x + y</td>
+            <td><button onclick="additionAs()">Show result</button><p id="add-as"></p></td>
+        </tr>
+        <tr>
+            <td>Substraction assignment</td>
+            <td>-</td>
+            <td>x -= y</td>
+            <td>x = x - y</td>
+            <td><button onclick="substractionAs()">Show result</button><p id="sub-as"></p></td>
+        </tr>
+        <tr>
+            <td>Division assignment</td>
+            <td>/</td>
+            <td>x /= y</td>
+            <td>x = x / y</td>
+            <td><button onclick="divisionAs()">Show result</button><p id="div-as"></p></td>
+        </tr>
+        <tr>
+            <td>Multiplication assignment</td>
+            <td>*</td>
+            <td>x *= y</td>
+            <td>x = x * y</td>
+            <td><button onclick="multiplicationAs()">Show result</button><p id="mul-as"></p></td>
+        </tr>
+        <tr>
+            <td>Remainder assignment</td>
+            <td>%</td>
+            <td>x %= y</td>
+            <td>x = x % y</td>
+            <td><button onclick="remainderAs()">Show result</button><p id="re-as"></p></td>
+        </tr>
+        <tr>
+            <td>Exponentiation assignment</td>
+            <td>**</td>
+            <td>x **= y</td>
+            <td>x = x ** y</td>
+            <td><button onclick="exponentiationAs()">Show result</button><p id="ex-as"></p></td>            
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
