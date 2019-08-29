@@ -12,5 +12,5 @@
 
 ## Exercise
 
-Every group has to do a research on one aspect of JavaScript.
-\n Afterwards the research will be bundled in one respository.
+Every group has to do a research on one aspect of JavaScript. <br/>
+Afterwards the research will be bundled in one respository.
