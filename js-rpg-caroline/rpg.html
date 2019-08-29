@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styling/rpg-style.css">
+    <title>RPG CAROLINE</title>
+</head>
+
+<body>
+    <!-- CREATE SCREEN -->
+        <div id="create">
+        <div class="grid1">
+            <div class="createChar cP1">
+                <form action="" id="p1" method="GET">
+                    <h1>Player 1</h1>
+                    <h2>Fill in your username</h2>
+                    <input type="text" placeholder="Username player 1" id="username1" required>
+                    <h2>Choose your race</h2>
+                    <div class="cc-selector" id="race1">
+                        <input id="orc" type="radio" name="race1" value="orc" />
+                        <label class="race-cc orc" for="orc"></label>
+                        <input id="elf" type="radio" name="race1" value="elf" />
+                        <label class="race-cc elf" for="elf"></label>
+                        <input id="vampire" type="radio" name="race1" value="vampire" />
+                        <label class="race-cc vampire" for="vampire"></label>
+                        <input id="human" type="radio" name="race1" value="human" />
+                        <label class="race-cc human" for="human"></label>
+                    </div>
+                    <h2>Choose your item</h2>
+                    <div class="item-selector" id="item1">
+                        <input id="boots1" type="radio" name="item1" value="boots" />
+                        <label class="item-cc boots" for="boots1"></label>
+                        <input id="staff1" type="radio" name="item1" value="staff" />
+                        <label class="item-cc staff" for="staff1"></label>
+                        <input id="sword1" type="radio" name="item1" value="sword" />
+                        <label class="item-cc sword" for="sword1"></label>
+                        <input id="bow1" type="radio" name="item1" value="bow" />
+                        <label class="item-cc bow" for="bow1"></label>
+                    </div>
+                    <h2>Are you sure?</h2>
+                    <input type="submit" class="submit">
+                </form>
+            </div>
+
+            <div class="createChar cP2">
+                <form action="" id="p2" method="GET">
+                    <h1>Player 2</h1>
+                    <h2>Fill in your username</h2>
+                    <input type="text" placeholder="Username player 2" id="username2" required>
+                    <h2>Choose your race</h2>
+                    <div class="cc-selector" id="race2">
+                        <input id="orc2" type="radio" name="race2" value="orc" />
+                        <label class="race-cc orc" for="orc2"></label>
+                        <input id="elf2" type="radio" name="race2" value="elf" />
+                        <label class="race-cc elf" for="elf2"></label>
+                        <input id="vampire2" type="radio" name="race2" value="vampire" />
+                        <label class="race-cc vampire" for="vampire2"></label>
+                        <input id="human2" type="radio" name="race2" value="human" />
+                        <label class="race-cc human" for="human2"></label>
+                    </div>
+
+                    <h2>Choose your item</h2>
+                    <div class="item-selector" id="item2">
+                        <input id="boots2" type="radio" name="item2" value="boots" />
+                        <label class="item-cc boots" for="boots2"></label>
+                        <input id="staff2" type="radio" name="item2" value="staff" />
+                        <label class="item-cc staff" for="staff2"></label>
+                        <input id="sword2" type="radio" name="item2" value="sword" />
+                        <label class="item-cc sword" for="sword2"></label>
+                        <input id="bow2" type="radio" name="item2" value="bow" />
+                        <label class="item-cc bow" for="bow2"></label>
+                    </div>
+                    <h2>Are you sure?</h2>
+                    <input type="submit" class="submit">
+                </form>
+            </div>
+            <div id="startGame">
+                <button id="startBtn">Start the game!</button>
+            </div>
+        </div>
+    </div>
+
+    <!--BATTLE SCREEN-->
+    <div id="battle">
+        <div class="grid2">
+            <div id="logbar">
+                <p id="log"></p>
+            </div>
+            <div class="battleChar bP1">
+                <div class="white-bg">
+                    <div class="inputName">
+                        <div id="nameP1" class="playerName">Player 1</div>
+                        <img id="itemP1" alt="">
+                    </div>
+                    <progress id="lifeP1" class="lifebar" value="100" max="100"></progress>
+                    <h3>Health: <span id="player1-health">100 / 100 </span></h3>
+                </div>
+                <div id="actionsP1" class="actions">
+                    <button id="hitP1"><i class="fas fa-hand-rock"></i></button>
+                    <button id="healP1"><i class="fas fa-heart"></i></button>
+                    <button id="yieldP1"><i class="fas fa-running"></i></button>
+                </div>
+                <div class="imagebox">
+                    <img id="imageP1">
+                </div>
+            </div>
+            <div id="vs">VS</div>
+            <div class="battleChar bP2">
+                <div class="white-bg">
+                    <div class="inputName">
+                        <div id="nameP2" class="playerName">Player 2</div> 
+                        <img id="itemP2" alt="">
+                    </div>
+                    <progress id="lifeP2" class="lifebar" value="100" max="100"></progress>
+                    <h3>Health: <span id="player2-health">100 / 100 </span></h3>
+                </div>
+                <div id="actionsP2" class="actions">
+                    <button id="hitP2"><i class="fas fa-hand-rock"></i></button>
+                    <button id="healP2"><i class="fas fa-heart"></i></button>
+                    <button id="yieldP2"><i class="fas fa-running"></i></button>
+                </div>
+                <div class="imagebox">
+                    <img id="imageP2">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- VICTORY SCREEN -->
+    <div id="victory">
+        <div class="flex">
+            <img src="styling/images/goldlauwer.png" alt="Victory symbol">
+            <h1 id="winner"></h1>
+            <div class="newgame">
+                <button id ="newgame-button">Start new game</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/24d7844539.js"></script>
+    <script src="javascript/gamelogic.js" type="module"></script>
+
+</body>
+
+</html>

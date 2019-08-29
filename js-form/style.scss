@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Montaga&display=swap'); //font-family: 'Montaga', serif;
+
+body {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2%;
+    margin-right: 5%;
+    background-color: white;
+    color: rgb(29, 25, 25);
+    font-family: 'Montaga', serif;
+    font-weight: bolder;
+    background-image: url(images/bg.jpeg);
+    background-size: cover;
+
+}
+
+form {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 700px;
+
+    fieldset {
+        width: 300px;
+        margin: 5px;
+        border: 3px outset #8F6A53;
+        background-color: rgba(255, 255, 255, 0.3);   
+    };
+
+    input,
+    select,
+    textarea {
+        width: 270px;
+        border-radius: 0.5rem;
+        margin: 5px;
+        padding: 3px 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-color: #8F6A53;
+    };
+
+    label {
+        padding: 5px, 0px;
+    };
+
+    input,
+    select {
+        height: 28px
+    };
+
+    select {width: 284px
+    };
+
+    #errorPerson,
+    #errorUser {
+        color: rgb(255, 38, 0);
+        max-width: 300px;
+        font-weight: lighter;
+    };
+
+    .button {
+        width: 100%;
+    };
+}

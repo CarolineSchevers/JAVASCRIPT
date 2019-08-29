@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css?family=Montaga&display=swap");
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 2%;
+  margin-right: 5%;
+  background-color: white;
+  color: #1d1919;
+  font-family: 'Montaga', serif;
+  font-weight: bolder;
+  background-image: url(images/bg.jpeg);
+  background-size: cover;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 700px;
+}
+
+form fieldset {
+  width: 300px;
+  margin: 5px;
+  border: 3px outset #8F6A53;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+form input,
+form select,
+form textarea {
+  width: 270px;
+  border-radius: 0.5rem;
+  margin: 5px;
+  padding: 3px 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-color: #8F6A53;
+}
+
+form label {
+  padding: 5px, 0px;
+}
+
+form input,
+form select {
+  height: 28px;
+}
+
+form select {
+  width: 284px;
+}
+
+form #errorPerson,
+form #errorUser {
+  color: #ff2600;
+  max-width: 300px;
+  font-weight: lighter;
+}
+
+form .button {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bad+Script&display=swap");
+body {
+  height: 100vh;
+  margin: 0px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: beige;
+}
+
+#quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#button {
+  border-radius: 0.5rem;
+  margin: 15px;
+  padding: 5px 10px;
+  background-color: #292929;
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}
+
+.quoteBox {
+  text-align: center;
+}
+.quoteBox .images {
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.quoteBox .quote-text {
+  font-family: "Bad Script", cursive;
+  font-size: 20px;
+  margin: 10px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.quoteBox .quote-text .quotemark {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0px 10px;
+}
+.quoteBox .quote-text .qR {
+  display: block;
+  transform: rotate(180deg);
+}
+.quoteBox .quote-author {
+  text-align: right;
+  margin: 10px 0px;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.loader {
+  border: 16px solid #c5c5c5;
+  border-radius: 50%;
+  border-top: 16px solid #db3434;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

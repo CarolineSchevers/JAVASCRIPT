@@ -1,0 +1,12 @@
+body {
+    margin: 30px;
+    background-color: rgba(93, 248, 196, 0.233);
+}
+
+section {
+    margin: 50px;
+}
+
+#imageCS {
+    text-align: center;
+}
