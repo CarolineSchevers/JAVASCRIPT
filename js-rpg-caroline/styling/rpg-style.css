@@ -1,0 +1,439 @@
+.cc-selector input {
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.cc-selector input:active + .race-cc {
+  opacity: .9;
+}
+
+.cc-selector input:checked + .race-cc {
+  -webkit-filter: none;
+  -moz-filter: none;
+  filter: none;
+}
+
+.vampire {
+  background-image: url("images/vampire.png");
+}
+
+.elf {
+  background-image: url("images/elf.png");
+}
+
+.human {
+  background-image: url("images/human.png");
+}
+
+.orc {
+  background-image: url("images/orc.png");
+}
+
+.race-cc {
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 120px;
+  height: 150px;
+  -webkit-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+  -webkit-filter: brightness(1.8) grayscale(1) opacity(0.7);
+  -moz-filter: brightness(1.8) grayscale(1) opacity(0.7);
+  filter: brightness(1.8) grayscale(1) opacity(0.7);
+}
+
+.race-cc:hover {
+  -webkit-filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+  -moz-filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+  filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+}
+
+.item-selector input {
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.item-selector input:active + .item-cc {
+  opacity: .9;
+}
+
+.item-selector input:checked + .item-cc {
+  -webkit-filter: none;
+  -moz-filter: none;
+  filter: none;
+}
+
+.boots {
+  background-image: url("images/boots.png");
+}
+
+.staff {
+  background-image: url("images/staff.png");
+}
+
+.sword {
+  background-image: url("images/sword.png");
+}
+
+.bow {
+  background-image: url("images/bow.png");
+}
+
+.item-cc {
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  -webkit-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+  -webkit-filter: brightness(1.8) grayscale(1) opacity(0.7);
+  -moz-filter: brightness(1.8) grayscale(1) opacity(0.7);
+  filter: brightness(1.8) grayscale(1) opacity(0.7);
+}
+
+.item-cc:hover {
+  -webkit-filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+  -moz-filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+  filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+}
+
+#create {
+  background-color: #010146;
+  color: goldenrod;
+  height: 100vh;
+}
+
+#create .grid1 {
+  padding-top: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 6fr 1fr 6fr 1fr;
+      grid-template-columns: 1fr 6fr 1fr 6fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: ". cP1 . cP2 ." ". btn . . .";
+}
+
+#create .grid1 .createChar {
+  width: 600px;
+  line-height: 1.5;
+  border: 25px solid #B88846;
+  -o-border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%23B88846' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8h16v16H8zM51 8h16v16H51zM51 51h16v16H51zM8 51h16v16H8z'/%3E%3C/g%3E%3Cg fill='%23B88846'%3E%3Ccircle cx='16' cy='16' r='2'/%3E%3Ccircle cx='59' cy='16' r='2'/%3E%3Ccircle cx='59' cy='59' r='2'/%3E%3Ccircle cx='16' cy='59' r='2'/%3E%3C/g%3E%3C/svg%3E") 25;
+     border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%23B88846' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8h16v16H8zM51 8h16v16H51zM51 51h16v16H51zM8 51h16v16H8z'/%3E%3C/g%3E%3Cg fill='%23B88846'%3E%3Ccircle cx='16' cy='16' r='2'/%3E%3Ccircle cx='59' cy='16' r='2'/%3E%3Ccircle cx='59' cy='59' r='2'/%3E%3Ccircle cx='16' cy='59' r='2'/%3E%3C/g%3E%3C/svg%3E") 25;
+}
+
+#create .grid1 .cP1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: cP1;
+}
+
+#create .grid1 .cP2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: cP2;
+}
+
+#create .grid1 form {
+  margin-left: 30px;
+}
+
+#create #startGame {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: btn;
+  margin-left: 30px;
+  margin-top: 25px;
+}
+
+#create #startGame #startBtn {
+  width: 200px;
+}
+
+button,
+.submit {
+  height: 40px;
+  width: 100px;
+  background-color: goldenrod;
+  border-color: goldenrod;
+  border-radius: 0.5rem;
+  margin: 20px 0px 30px 0px;
+}
+
+#battle {
+  height: 100vh;
+  display: none;
+  background-image: url("images/arena.jpg");
+  background-size: cover;
+  color: #010146;
+}
+
+#battle .grid2 {
+  padding-top: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 6fr 1fr 6fr 1fr;
+      grid-template-columns: 1fr 6fr 1fr 6fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: " .log log log." ". bP1 vs bP2 .";
+}
+
+#battle .grid2 #logbar {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: log;
+  width: 100%;
+  height: 50px;
+  padding: 10px 20px;
+  font-size: 20px;
+  overflow: auto;
+  background-color: rgba(33, 107, 101, 0.233);
+  border-radius: 1rem;
+  border: inset;
+  border-color: #216b65;
+}
+
+#battle .grid2 .bP1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: bP1;
+  margin: 15px;
+}
+
+#battle .grid2 .bP1 .white-bg {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.404);
+  padding: 5px;
+}
+
+#battle .grid2 .bP1 .white-bg .inputName {
+  width: 100%;
+  font-size: 40px;
+  font-weight: bolder;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#battle .grid2 .bP1 .white-bg .inputName .playerName {
+  margin: 5px;
+}
+
+#battle .grid2 .bP1 .white-bg .inputName img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+#battle .grid2 .bP1 .white-bg .lifebar {
+  width: 100%;
+  height: 20px;
+}
+
+#battle .grid2 .bP1 .actions {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#battle .grid2 .bP1 .actions button {
+  height: 50px;
+  width: 150px;
+}
+
+#battle .grid2 .bP1 .actions button i {
+  font-size: 30px;
+  color: #010146;
+}
+
+#battle .grid2 .bP1 .imagebox {
+  height: 410px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#battle .grid2 .bP1 .imagebox img {
+  height: 400px;
+  border: none;
+}
+
+#battle .grid2 #vs {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: vs;
+  font-size: 80px;
+  margin: 15px;
+}
+
+#battle .grid2 .bP2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: bP2;
+  margin: 15px;
+}
+
+#battle .grid2 .bP2 .white-bg {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.404);
+  padding: 5px;
+}
+
+#battle .grid2 .bP2 .white-bg .inputName {
+  width: 100%;
+  font-size: 40px;
+  font-weight: bolder;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#battle .grid2 .bP2 .white-bg .inputName .playerName {
+  margin: 5px;
+}
+
+#battle .grid2 .bP2 .white-bg .inputName img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+#battle .grid2 .bP2 .white-bg .lifebar {
+  width: 100%;
+  height: 20px;
+}
+
+#battle .grid2 .bP2 .actions {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#battle .grid2 .bP2 .actions button {
+  height: 50px;
+  width: 150px;
+}
+
+#battle .grid2 .bP2 .actions button i {
+  font-size: 30px;
+  color: #010146;
+}
+
+#battle .grid2 .bP2 .imagebox {
+  height: 410px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#battle .grid2 .bP2 .imagebox img {
+  height: 400px;
+  border: none;
+}
+
+#battle .battleChar, #battle #vs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#victory {
+  display: none;
+  background-color: #010146;
+  color: goldenrod;
+  height: 100vh;
+}
+
+#victory .flex {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#victory .flex img {
+  width: 300px;
+}
+
+#victory .flex #winner {
+  margin-top: 50px;
+  font-size: 70px;
+}
+
+#victory .flex .newgame {
+  width: 100%;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin: 50px 0px 0px 150px;
+}
+
+#victory .flex .newgame #newgame-button {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=rpg-style.css.map */

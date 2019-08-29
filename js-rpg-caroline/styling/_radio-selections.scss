@@ -1,0 +1,83 @@
+// RACE radio
+.cc-selector {
+    input {
+    margin:0;
+    padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+    &:active +.race-cc {opacity: .9;}
+    &:checked +.race-cc {
+        -webkit-filter: none;
+        -moz-filter: none;
+                filter: none;
+        }
+    }
+}
+
+.vampire{background-image:url('images/vampire.png');}
+.elf{background-image:url('images/elf.png');}
+.human{background-image: url('images/human.png')}
+.orc{background-image: url('images/orc.png')}
+
+.race-cc{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:120px;
+    height:150px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+            filter: brightness(1.8) grayscale(1) opacity(.7);
+    &:hover{
+        -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+           -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+                filter: brightness(1.2) grayscale(.5) opacity(.9);
+    }
+}
+
+// ITEM radio
+.item-selector {
+    input {
+    margin:0;
+    padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+    &:active +.item-cc {opacity: .9;}
+    &:checked +.item-cc {
+        -webkit-filter: none;
+        -moz-filter: none;
+                filter: none;
+        }
+    }
+}
+
+.boots{background-image:url('images/boots.png');}
+.staff{background-image:url('images/staff.png');}
+.sword{background-image: url('images/sword.png')}
+.bow{background-image: url('images/bow.png')}
+
+.item-cc{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:100px;
+    height:100px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+            filter: brightness(1.8) grayscale(1) opacity(.7);
+    &:hover{
+        -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+           -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+                filter: brightness(1.2) grayscale(.5) opacity(.9);
+    }
+}

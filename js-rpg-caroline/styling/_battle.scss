@@ -1,0 +1,54 @@
+@import 'mixin';
+
+#battle {
+    height: 100vh;
+    display: none;
+    background-image: url("images/arena.jpg");
+    background-size: cover;
+    color: rgb(1, 1, 70);
+
+    .grid2 {
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 6fr 1fr 6fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            " .log log log."
+            ". bP1 vs bP2 .";
+            
+            #logbar {
+                grid-area: log;
+                width: 100%;
+                height: 50px;
+                padding: 10px 20px;
+                font-size: 20px;
+                overflow: auto;
+                background-color: rgba(33, 107, 101, 0.233);
+                border-radius: 1rem;
+                border: inset;
+                border-color: rgb(33, 107, 101);
+            };
+            .bP1 {
+                grid-area: bP1;
+                margin: 15px;
+                @include battleCards;
+            };
+            #vs {
+                grid-area: vs;
+                font-size: 80px;
+                margin: 15px;
+            };
+            .bP2 {
+                grid-area: bP2;
+                margin: 15px;
+                @include battleCards;
+            };
+    };
+
+    .battleChar, #vs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+    };
+};
