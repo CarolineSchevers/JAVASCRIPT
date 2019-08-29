@@ -1,4 +1,4 @@
-Result: [Quote-page](https://carolineschevers.github.io/js-ajax-quotes/)
+Result: [Quote-page](https://carolineschevers.github.io/JAVASCRIPT/js-ajax-quotes/)
 
 # Challenge: Asynchronous JavaScript and XML
 |Challenge Parameters  |Challenge Details              |
