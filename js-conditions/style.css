@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Anton|DM+Serif+Text|Rajdhani&display=swap");
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: 300px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: rgba(1, 177, 1, 0.3);
+  height: 100vh;
+  font-family: "Rajdhani", sans-serif;
+  letter-spacing: 2.5px;
+  text-align: center;
+  width: 100%;
+  margin: 50px 0px;
+}
+body h1 {
+  font-size: 55px;
+  font-weight: bolder;
+  margin: 0px;
+}
+body .amount {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+body .amount #players {
+  margin-left: 30px;
+}
+body .game-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+}
+body .game-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .game-container .score {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+body .game-container .score span {
+  margin-left: 10px;
+  font-size: 20px;
+}
+body .game-container img {
+  height: 350px;
+}
+
+h3 {
+  color: #aa0b0b;
+}
+
+select, button {
+  width: 150px;
+  height: 40px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.play {
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  margin-bottom: 10px;
+}
+.play button {
+  border-radius: 15rem;
+  border: 1px solid black;
+  font-size: 18px;
+}
+.play button:hover {
+  background-color: rgba(170, 11, 11, 0.7);
+  color: white;
+}
+
+#result {
+  margin-bottom: 100px;
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

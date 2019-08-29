@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|DM+Serif+Text|Rajdhani&display=swap'); // font-family: 'Rajdhani', sans-serif;
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: 300px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: rgba(1, 177, 1, 0.3);
+    height: 100vh;
+    font-family: 'Rajdhani', sans-serif;
+    letter-spacing: 2.5px;
+    text-align: center;
+    width: 100%;
+    margin: 50px 0px;
+
+    h1 {
+        font-size: 55px;
+        font-weight: bolder;
+        margin: 0px;
+    }
+
+    .amount {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+
+        #players {
+            margin-left: 30px;
+        }
+    }
+
+    .game-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 300px;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .score {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            span {
+                margin-left: 10px;
+                font-size: 20px;
+            }
+        }
+        img {
+            height: 350px;
+        }
+    }
+}
+
+h3 {
+    color:rgb(170, 11, 11);
+}
+
+select, button {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.play {
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    margin-bottom: 10px;
+
+    button {
+        border-radius: 15rem;
+        border: 1px solid black;
+        font-size: 18px;
+    }
+    button:hover {
+        background-color: rgba(170, 11, 11, 0.7);
+        color:white;
+    }
+}
+
+#result {
+    margin-bottom: 100px;
+    font-size: 30px
+}
