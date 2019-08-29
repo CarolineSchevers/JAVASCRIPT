@@ -1,4 +1,4 @@
-Result: [js-loops](https://carolineschevers.github.io/js-loops/)
+Result: [js-loops](https://carolineschevers.github.io/JAVASCRIPT/js-loops/)
 
 # Challenge: Looooops
 
