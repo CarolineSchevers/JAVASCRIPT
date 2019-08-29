@@ -1,4 +1,4 @@
-Result: [Calculator](https://carolineschevers.github.io/js-functions/)
+Result: [Calculator](https://carolineschevers.github.io/JAVASCRIPT/js-functions/)
 
 # Challenge: Functions and events
 
