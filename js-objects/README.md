@@ -1,4 +1,4 @@
-Result: [Family Info](https://carolineschevers.github.io/js-objects/) (how I understood the exercise)
+Result: [Family Info](https://carolineschevers.github.io/JAVASCRIPT/js-objects/) (how I understood the exercise)
 
 # Challenge: Objects
 
