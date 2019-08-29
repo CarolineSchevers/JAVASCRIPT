@@ -1,4 +1,4 @@
-Result: [Variables-dataypes-operators](https://carolineschevers.github.io/JAVASCRIPT/js-variables-dataypes-operators/index.html).
+Result: [Variables-dataypes-operators](https://carolineschevers.github.io/JAVASCRIPT/js-variables-datatypes-operators/index.html).
 
 # Challenge: Variables, Basic Datatypes & Operators
 
