@@ -106,8 +106,11 @@
   filter: brightness(1.2) grayscale(0.5) opacity(0.9);
 }
 
-#create {
+body {
   background-color: #010146;
+}
+
+#create {
   color: goldenrod;
   height: 100vh;
 }
@@ -172,7 +175,7 @@ button,
 #battle {
   height: 100vh;
   display: none;
-  background-image: url("images/arena.jpg");
+  background-image: url("styling/images/arena.jpg");
   background-size: cover;
   color: #010146;
 }
